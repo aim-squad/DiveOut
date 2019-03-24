@@ -1,4 +1,4 @@
-Group Project - README Template
+GGroup Project - README Template
 ===
 
 # DiveOut
@@ -29,12 +29,16 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 **Required Must-have Stories**
 
-* [Resigster User; login/logout user; create Resvation; Display Local restaurants]
+* Resigster User; 
+* login/logout user
+* Create Resvation
+* Display Local restaurants
 * ...
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
+* Displays reviews by customers 
+* Displays stars
 * ...
 
 ### 2. Screen Archetypes
