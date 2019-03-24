@@ -1,4 +1,4 @@
-GGroup Project - README Template
+Group Project - README Template
 ===
 
 # DiveOut
@@ -39,6 +39,8 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 * Displays reviews by customers 
 * Displays stars
+* conformation of reseravtion
+* profile page
 * ...
 
 ### 2. Screen Archetypes
@@ -83,3 +85,12 @@ Books reservations for people ahead of time; they can pick a time or just join t
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+## Notes For Creators
+
+### General Notes 
+* Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
+    * MAke sure to give credit to open street view
+
+
