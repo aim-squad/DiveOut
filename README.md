@@ -11,7 +11,7 @@ Group Project - README Template
 
 ## Overview
 ### Description
-[Books reservations for people ahead of time; they can pick a time or just join the wait list which is a queue of the most recent parton who joined]  
+Books reservations for people ahead of time; they can pick a time or just join the wait list which is a queue of the most recent parton who joined  
 
 
 ### App Evaluation
