@@ -102,6 +102,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
+<img src='https://i.imgur.com/F0DUXcT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 [This section will be completed in Unit 9]
