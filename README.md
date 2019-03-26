@@ -41,33 +41,57 @@ Books reservations for people ahead of time; they can pick a time or just join t
 * Displays stars
 * conformation of reseravtion
 * profile page
+* Holds and gives names, phone#s, emails
 * ...
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
-
+* Lunch Screen
+   * this is the Lunch storyboard where users can login or resgiter
+   * 
+* Login/ Register Screen 
+   * this is the screen where users can login into their profiles or register a new account 
+   * Register screen creates a new account using email address 
+   * Login use email and password to login in 
+* Restaurants Screen 
+    * This shows the local restaurants in the area to pick a reservation screen 
+    * Once a user picks a restaurant it winavi to Add a reservation screen  
+* Add Reservation Screen 
+    * this screen is the add screen for any new resrvations all the user does is slect a time then input phone # and email 
+* Reservation Screen 
+    * shows currnet reservations and past ones 
+* Profile Page 
+    * is the profile page can change anyhtong about their personal information 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Current Reservation Tab
+    * navi to Resveration Screen 
+* Profile Tab
+    * navi to Profile page 
+* Restaurant Tab
+    * navi to Restaurant Screen 
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Lunch Screen
+   * to Login Screen
+   * to Register Screen 
+* Login or Resgister Screen 
+   * from Lunch screen 
+   * to Restaurant Screen
+* Restaurant List Screen 
+    * From LOgin/Register Screen 
+    * to Reservation screen from chosen restaurant 
+* Add reservation 
+    * from Restaurant Screen 
+* Reservation 
+    * from Restaurant Screen, Add Reservations Screen 
+    * to Restaurant Screen, Profile page 
+* Profile Page
+    * to Reservation Screen 
+    * to Current Reservation Screen 
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
@@ -92,5 +116,3 @@ Books reservations for people ahead of time; they can pick a time or just join t
 ### General Notes 
 * Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
     * MAke sure to give credit to open street view
-
-
