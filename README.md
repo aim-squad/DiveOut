@@ -16,12 +16,12 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- Category: Navigation Reviews and service  
+- Mobile: moblie primarily but it the feature could be used on a website
+- Story: Let users make restaurant reservations ahead of time or on the road to locations while also seeing what past partons thoughts and reivews on the restaurants 
+- Market: For people on the go want to seat down to eat a meal and not have to wait in line for a table to clear out  
+- Habit: Usually used during family outing or trips from work. Mainly used during meal times. It doesnt need to be used that often 
+- Scope: First start collecting the information on local restaurants. Then start Automating the booking process. Could expand further to ordering food ahead of time so its ready when the customer gets there. 
 
 ## Product Spec
 
@@ -29,80 +29,77 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 **Required Must-have Stories**
 
-* Resigster User
-* Login/Logout User
-* Display Local Restaurants (that use the app)
-* Create Reservation
-* Profile
+* Resigster User; 
+* login/logout user
+* Create Resvation
+* Display Local restaurants
 * ...
 
 **Optional Nice-to-have Stories**
 
 * Displays reviews by customers 
 * Displays stars
-* Confirmation of reseravtion
-* Holds and gives names, phone numbers, and emails
+* conformation of reseravtion
+* profile page
+* Holds and gives names, phone#s, emails
 * ...
 
 ### 2. Screen Archetypes
 
-* Launch Screen
-   * This is the launch storyboard where users can login or resgiter
-   
-* Login / Register Screen 
-   * this is the screen where users can login into their profiles or register a new account.
-   * Register screen creates a new account using their email address and the password that they give.
-   * Login screen will use their email and password to login in.
+* Lunch Screen
+   * this is the Lunch storyboard where users can login or resgiter
+   * 
+* Login/ Register Screen 
+   * this is the screen where users can login into their profiles or register a new account 
+   * Register screen creates a new account using email address 
+   * Login use email and password to login in 
 * Restaurants Screen 
-    * This shows the local restaurants in the area to pick from that are working with the app.
-    * Once a user picks a restaurant, it will take them to the Add Reservation screen. 
+    * This shows the local restaurants in the area to pick a reservation screen 
+    * Once a user picks a restaurant it winavi to Add a reservation screen  
 * Add Reservation Screen 
-    * This screen is the add screen for any new resrvations. All the user does is select an avaliable time, date, and the party size. It will then send a comformation of the reservation.
+    * this screen is the add screen for any new resrvations all the user does is slect a time then input phone # and email 
 * Reservation Screen 
-    * Shows currnet reservations.
+    * shows currnet reservations and past ones 
 * Profile Page 
-    * This screen a user will be able to edit anything about their personal information.
+    * is the profile page can change anyhtong about their personal information 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* Current Reservations Tab
-    * Navigates to the Resverations Screen 
+* Current Reservation Tab
+    * navi to Resveration Screen 
 * Profile Tab
-    * Navigates to the Profile page 
+    * navi to Profile page 
 * Restaurant Tab
-    * Navigates to the Restaurant Screen 
+    * navi to Restaurant Screen 
 
 **Flow Navigation** (Screen to Screen)
 
 * Lunch Screen
    * to Login Screen
    * to Register Screen 
-* Login Screen 
-   * from Lunch screen 
-   * to Restaurant Screen
-* Resgister Screen 
+* Login or Resgister Screen 
    * from Lunch screen 
    * to Restaurant Screen
 * Restaurant List Screen 
-    * from Login/Register Screen 
+    * From LOgin/Register Screen 
     * to Reservation screen from chosen restaurant 
 * Add reservation 
     * from Restaurant Screen 
-    * to Current Reservations Screen
-* Current Reservations 
+* Reservation 
     * from Restaurant Screen, Add Reservations Screen 
-    * to Restaurant Screen
+    * to Restaurant Screen, Profile page 
 * Profile Page
-    * from Login/Register Screen  
+    * to Reservation Screen 
+    * to Current Reservation Screen 
 
 ## Wireframes
-<img src="https://i.imgur.com/y5trO7z.png" width=600>
+[Add picture of your hand sketched wireframes in this section]
+<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-<img src='https://i.imgur.com/F0DUXcT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 [This section will be completed in Unit 9]
@@ -119,3 +116,4 @@ Books reservations for people ahead of time; they can pick a time or just join t
 ### General Notes 
 * Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
     * MAke sure to give credit to open street view
+
