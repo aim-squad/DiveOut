@@ -98,7 +98,20 @@ Books reservations for people ahead of time; they can pick a time or just join t
 <img src='https://i.imgur.com/F0DUXcT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
+#### Post
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | name          | String   | name of user |
+   | phone number  | Number   | phone number of user |
+   | email         | String   | email of user |
+   | password      | String   | password of user |
+   | resturant     | String   | name of resturant |
+   | date          | Date     | date of reservation |
+   | time	   | Time     | time of reservation |
+   | party size    | number   | number of people in the party |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
 ### Models
 [Add table of models]
 ### Networking
