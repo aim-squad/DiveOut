@@ -98,8 +98,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
 <img src='https://i.imgur.com/F0DUXcT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-#### Post
-
+#### User
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user post (default field) |
@@ -107,11 +106,14 @@ Books reservations for people ahead of time; they can pick a time or just join t
    | phone number  | Number   | phone number of user |
    | email         | String   | email of user |
    | password      | String   | password of user |
+#### Resturant
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
    | resturant     | String   | name of resturant |
    | date          | Date     | date of reservation |
    | time	   | Time     | time of reservation |
    | party size    | number   | number of people in the party |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+
 ### Models
 [Add table of models]
 ### Networking
