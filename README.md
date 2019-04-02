@@ -117,9 +117,97 @@ Books reservations for people ahead of time; they can pick a time or just join t
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### List of network requests by screen
+   - Login Screen
+      - (Read/GET) Check user information
+         ```swift
+         let userInfo = PFObject(className:"UserInfo")
+         userInfo["userName"] = "Sean Plott"
+         userInfo["Email"] = "splott@gmail.com"
+         userInfo["Phone"] = 123-456-7899
+         userInfo["Password"] = "password"
+         userInfo.saveInBackground {
+           (success: Bool, error: Error?) in
+           if (success) {
+             // The object has been saved.
+           } else {
+             // There was a problem, check error.description
+           }
+         }
+         ```
+   - Register Screen
+      - (Create/User) Create a new user
+        ```swift
+         let query = PFQuery(className:"UserInfo")
+         query.getObjectInBackground(withId: "xWMyZEGZ") { (userInfo: PFObject?, error: Error?) in
+         if let error = error {
+             //The query returned an error
+             print(error.localizedDescription)
+         } else {
+             //The object has been retrieved
+             print(userInfo)
+         }
+         }
+         ```
+   - Resturants Screen
+      - (Read/GET) Query logged in resturant objects
+      ```swift
+         let query = PFQuery(className:"resturantInfo")
+         query.getObjectInBackground(withId: "xWMyZEGZ") { (resturantInfo: PFObject?, error: Error?) in
+         if let error = error {
+             //The query returned an error
+             print(error.localizedDescription)
+         } else {
+             //The object has been retrieved
+             print(resturantInfo)
+         }
+         }
+         ```
+   - Add Reservation Screen
+      - (Read/GET) Query logged in resturant object atribute
+      ```swift
+         let query = PFQuery(className:"reservationInfo")
+         query.getObjectInBackground(withId: "xWMyZEGZ") { (reservationInfo: PFObject?, error: Error?) in
+         if let error = error {
+             //The query returned an error
+             print(error.localizedDescription)
+         } else {
+             //The object has been retrieved
+             print(reservationInfo)
+         }
+         }
+         ```
+      
+   - Current Reservation Screen
+      - (Create/POST) create new reservation with users data
+      - (Delete) Delete reservation
+      ```swift
+         let query = PFQuery(className:"reservationInfo")
+         query.getObjectInBackground(withId: "xWMyZEGZ") { (reservationInfo: PFObject?, error: Error?) in
+         if let error = error {
+             //The query returned an error
+             print(error.localizedDescription)
+         } else {
+             //The object has been retrieved
+             print(reservationInfo)
+         }
+         }
+         ```
+   - Profile Screen 
+      - (Read/GET) user information
+      ```swift
+         let query = PFQuery(className:"UserInfo")
+         query.getObjectInBackground(withId: "xWMyZEGZ") { (userInfo: PFObject?, error: Error?) in
+         if let error = error {
+             //The query returned an error
+             print(error.localizedDescription)
+         } else {
+             //The object has been retrieved
+             print(userInfo)
+         }
+         }
+         ```
+
 ## Notes For Creators
 ### General Notes 
 * Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
