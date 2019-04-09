@@ -10,7 +10,7 @@ Group Project - README Template
 ### Description
 Books reservations for people ahead of time; they can pick a time or just join the wait list which is a queue of the most recent parton who joined  
 ### App Evaluation
-[Evaluation of your app across the following attributes]
+
 - **Category:** Navigation Reviews and service
 - **Mobile:** moblie primarily but it the feature could be used on a website
 - **Story:** Let users make restaurant reservations ahead of time or on the road to locations while also seeing what past partons thoughts and reivews on the restaurants
@@ -40,52 +40,52 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 ### 2. Screen Archetypes
 
-* Main Screen
+- [ ] Main Screen
    * This is the Main Storyboard where users can login or resgiter.
-* Login / Register Screen 
+- [ ] Login / Register Screen 
    * This is the screen where users can login into their profiles or register to create a new account. 
    * The Register screen creates a new account using an email address and password. 
    * Login screen will use an email and password to login in. 
-* Restaurants Screen 
+- [ ] Restaurants Screen 
     * This shows the local restaurants in the area to pick from that are working with the app.
     * Once a user picks a restaurant, it will take them to the Add Reservation screen. 
-* Add Reservation Screen 
+- [ ] Add Reservation Screen 
     * This screen is the add screen for any new resrvations. All the user does is select an avaliable time, date, and the party size. It will then send a comformation of the reservation.
-* Current Reservations Screen 
+- [ ] Current Reservations Screen 
     * Shows currnet reservations.
-* Profile Page 
+- [ ] Profile Page 
     * Is the profile page where a user can edit anything about their personal information.
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
  
-* Current Reservations Tab
+- [ ] Current Reservations Tab
     * Navigates to the Current Resverations Screen 
-* Profile Tab 
+- [ ] Profile Tab 
     * Navigates to the Profile page 
-* Restaurant Tab
+- [ ] Restaurant Tab
     * Navigates to the Restaurant Screen 
 
 **Flow Navigation** (Screen to Screen)
 
-* Main Screen
+- [ ] Main Screen
    * to Login Screen
    * to Register Screen  
-* Login Screen 
+- [ ] Login Screen 
    * from Main screen 
    * to Restaurant Screen
-* Resgister Screen 
+- [ ] Resgister Screen 
    * from Main screen 
    * to Restaurant Screen
-* Restaurant List Screen 
+- [ ] Restaurant List Screen 
     * from Login/Register Screen 
     * to Current Reservation screen from chosen restaurant 
-* Add reservation 
+- [ ] Add reservation 
     * from Restaurant Screen 
-* Current Reservations 
+- [ ] Current Reservations 
     * from Restaurant Screen, Add Reservations Screen 
     * to Restaurant Screen
-* Profile Page 
+- [ ] Profile Page 
     * to Current Reservations Screen 
     * from Login/Register Screen  
 
@@ -118,7 +118,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
 [Add table of models]
 ### Networking
 #### List of network requests by screen
-   - Login Screen
+   - [ ] Login Screen
       - (Read/GET) Check user information
          ```swift
          let userInfo = PFObject(className:"UserInfo")
@@ -135,7 +135,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
            }
          }
          ```
-   - Register Screen
+   - [ ] Register Screen
       - (Create/User) Create a new user
         ```swift
          let query = PFQuery(className:"UserInfo")
@@ -149,7 +149,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          }
          ```
-   - Resturants Screen
+   - [ ] Resturants Screen
       - (Read/GET) Query logged in resturant objects
       ```swift
          let query = PFQuery(className:"resturantInfo")
@@ -163,7 +163,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          }
          ```
-   - Add Reservation Screen
+   - [ ] Add Reservation Screen
       - (Read/GET) Query logged in resturant object atribute
       ```swift
          let query = PFQuery(className:"reservationInfo")
@@ -178,7 +178,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          ```
       
-   - Current Reservation Screen
+   - [ ] Current Reservation Screen
       - (Create/POST) create new reservation with users data
       - (Delete) Delete reservation
       ```swift
@@ -193,7 +193,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          }
          ```
-   - Profile Screen 
+   - [ ] Profile Screen 
       - (Read/GET) user information
       ```swift
          let query = PFQuery(className:"UserInfo")
@@ -207,8 +207,10 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          }
          ```
-
+## Current Version 
+<img scr= \>
 ## Notes For Creators
 ### General Notes 
 * Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
     * MAke sure to give credit to open street view
+
