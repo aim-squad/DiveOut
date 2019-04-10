@@ -40,52 +40,52 @@ Books reservations for people ahead of time; they can pick a time or just join t
 
 ### 2. Screen Archetypes
 
-- [ ] Main Screen
+* Main Screen
    * This is the Main Storyboard where users can login or resgiter.
-- [ ] Login / Register Screen 
+* Login / Register Screen 
    * This is the screen where users can login into their profiles or register to create a new account. 
    * The Register screen creates a new account using an email address and password. 
    * Login screen will use an email and password to login in. 
-- [ ] Restaurants Screen 
+* Restaurants Screen 
     * This shows the local restaurants in the area to pick from that are working with the app.
     * Once a user picks a restaurant, it will take them to the Add Reservation screen. 
-- [ ] Add Reservation Screen 
+* Add Reservation Screen 
     * This screen is the add screen for any new resrvations. All the user does is select an avaliable time, date, and the party size. It will then send a comformation of the reservation.
-- [ ] Current Reservations Screen 
+* Current Reservations Screen 
     * Shows currnet reservations.
-- [ ] Profile Page 
+* Profile Page 
     * Is the profile page where a user can edit anything about their personal information.
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
  
-- [ ] Current Reservations Tab
+- [x] Current Reservations Tab
     * Navigates to the Current Resverations Screen 
-- [ ] Profile Tab 
+- [x] Profile Tab 
     * Navigates to the Profile page 
-- [ ] Restaurant Tab
+- [x] Restaurant Tab
     * Navigates to the Restaurant Screen 
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] Main Screen
+- [x] Main Screen
    * to Login Screen
    * to Register Screen  
-- [ ] Login Screen 
+- [x] Login Screen 
    * from Main screen 
    * to Restaurant Screen
-- [ ] Resgister Screen 
+- [x] Resgister Screen 
    * from Main screen 
    * to Restaurant Screen
-- [ ] Restaurant List Screen 
+- [x] Restaurant List Screen 
     * from Login/Register Screen 
     * to Current Reservation screen from chosen restaurant 
-- [ ] Add reservation 
+- [x] Add reservation 
     * from Restaurant Screen 
-- [ ] Current Reservations 
+- [x] Current Reservations 
     * from Restaurant Screen, Add Reservations Screen 
     * to Restaurant Screen
-- [ ] Profile Page 
+- [x] Profile Page 
     * to Current Reservations Screen 
     * from Login/Register Screen  
 
@@ -208,7 +208,8 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          ```
 ## Current Version 
-<img scr= \>
+<img scr= https://i.imgur.com/xNo3bjr.gif\>
+
 ## Notes For Creators
 ### General Notes 
 * Use Open Street Maps @ https://gis.stackexchange.com/questions/259417/is-it-possible-to-export-data-from-google-maps
