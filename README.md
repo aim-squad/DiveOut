@@ -208,7 +208,7 @@ Books reservations for people ahead of time; they can pick a time or just join t
          }
          ```
 ## Current Version 
-<img scr= https://i.imgur.com/xNo3bjr.gif\>
+<img scr= "https://i.imgur.com/xNo3bjr.gif" \>
 
 ## Notes For Creators
 ### General Notes 
