@@ -124,22 +124,27 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="M08-MZ-78O" kind="show" id="5gn-uX-LNL"/>
+                                    <action selector="onLogin:" destination="sKp-Rm-Dbn" eventType="touchUpInside" id="yA0-0z-uAR"/>
+                                    <segue destination="M08-MZ-78O" kind="presentation" id="riu-br-xTC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="STx-xk-pai"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Zlz-wE-FGn" id="BTN-yu-hdJ"/>
+                        <outlet property="passwordField" destination="7Gv-8U-q5e" id="HUE-wi-28P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gZ-Mf-0tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="879" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="1rN-1e-VZ6">
             <objects>
-                <viewController id="80A-uU-OXB" sceneMemberID="viewController">
+                <viewController id="80A-uU-OXB" customClass="RegisterViewController" customModule="DiveOut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mo6-Fj-PcU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +168,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrQ-G0-P4h">
                                 <rect key="frame" x="33" y="366" width="90" height="24"/>
@@ -177,7 +182,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-sW-qbH">
                                 <rect key="frame" x="33" y="232" width="98" height="24"/>
@@ -198,14 +203,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0y-KP-BKM">
                                 <rect key="frame" x="33" y="261" width="308" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEM-XN-Ycj">
                                 <rect key="frame" x="135" y="534" width="105" height="36"/>
@@ -216,17 +221,24 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="M08-MZ-78O" kind="show" id="edK-4G-Wnq"/>
+                                    <action selector="confirmRegistrationButton:" destination="80A-uU-OXB" eventType="touchUpInside" id="192-Te-Aet"/>
+                                    <segue destination="M08-MZ-78O" kind="presentation" identifier="registerSegue" id="s4l-en-TsM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="rLg-6Q-Nhg"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="huX-Ud-0if" id="rde-wP-ncq"/>
+                        <outlet property="fullNameField" destination="a0y-KP-BKM" id="zYV-lE-U0H"/>
+                        <outlet property="numberField" destination="sSd-PD-mhM" id="UgR-eW-VRu"/>
+                        <outlet property="passwordField" destination="cc7-eH-oMI" id="2Uj-3S-aa1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9y-Ok-0JJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="134"/>
+            <point key="canvasLocation" x="1660" y="-169"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="y12-1D-UEp">
@@ -330,14 +342,14 @@
                     <toolbarItems>
                         <barButtonItem title="Current Reservations" width="372.69999999999999" style="done" id="O4a-JI-Y5p">
                             <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="lXC-wZ-OeB" kind="show" id="TIt-gb-BRT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Profile" image="profileM" style="done" id="4Zr-JV-9D0">
                             <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="p3p-ey-hzS" kind="show" id="a4M-No-DYs"/>
                             </connections>
@@ -466,14 +478,14 @@
                         <barButtonItem image="foodCover" width="250" style="done" id="Qy3-13-hGe">
                             <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
                             <inset key="largeContentSizeImageInsets" minX="-18" minY="0.0" maxX="-13" maxY="-8"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="M08-MZ-78O" kind="show" id="5yT-Ax-8iD"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Profile" image="profileM" width="310" style="done" id="6f0-rp-uTE">
                             <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="p3p-ey-hzS" kind="show" id="AeM-6a-til"/>
                             </connections>
@@ -560,13 +572,13 @@
                     <toolbarItems>
                         <barButtonItem title="Resturants" image="foodCover" width="163.33333333333331" style="done" id="9sW-q8-zsz">
                             <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="M08-MZ-78O" kind="show" id="RGk-L7-Xav"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Current Reservations" style="done" id="6Ej-of-9uj">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.47450980390000003" green="0.1215686275" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="lXC-wZ-OeB" kind="show" id="QcH-25-idv"/>
                             </connections>
@@ -596,6 +608,6 @@
         <segue reference="a4M-No-DYs"/>
         <segue reference="QcH-25-idv"/>
         <segue reference="QJ8-I4-diH"/>
-        <segue reference="5gn-uX-LNL"/>
+        <segue reference="s4l-en-TsM"/>
     </inferredMetricsTieBreakers>
 </document>

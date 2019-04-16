@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  DiveOut
 //
-//  Created by Philip Irivng  on 3/24/19.
+//  Created by Philip Irivng and Kelsey McArthur on 3/24/19.
 //  Copyright © 2019 AIM-Squad. All rights reserved.
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "DIVEOUT"
+                configuration.server = "http://DiveOut.herokuapp.com/parse"
+            })
+        )
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+
+            window?.rootViewController = feedNavigationController
+        }
+
         return true
     }
 
