@@ -21,16 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(
             with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "DIVEOUT"
-                configuration.server = "http://DiveOut.herokuapp.com/parse"
+                configuration.server = "https://diveout2341345.herokuapp.com//parse"
             })
         )
         
-        if PFUser.current() != nil {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
-
-            window?.rootViewController = feedNavigationController
-        }
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//
+//            window?.rootViewController = feedNavigationController
+//        }
 
         return true
     }

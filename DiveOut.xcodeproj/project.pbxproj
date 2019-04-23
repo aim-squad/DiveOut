@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2467A7CFEC6E7B2ABBDA02AA /* Pods_DiveOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368CBED8111D31AF7A3180E3 /* Pods_DiveOutUITests.framework */; };
 		30CBC10E4CB2FB9E3A766D29 /* Pods_DiveOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732C9A4BA10A6C850A07E996 /* Pods_DiveOut.framework */; };
-		42B4F2F7226519140033B73F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4F2F6226519140033B73F /* LoginViewController.swift */; };
 		42B4F2F9226519220033B73F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4F2F8226519220033B73F /* RegisterViewController.swift */; };
 		74AB749CB0C2301A70AF433D /* Pods_DiveOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA14349FECF58F6B99D4072 /* Pods_DiveOutTests.framework */; };
 		E3EDCEB12247FE35004AEB66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDCEB02247FE35004AEB66 /* AppDelegate.swift */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		053504C7F135686B2D322002 /* Pods-DiveOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiveOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiveOutUITests/Pods-DiveOutUITests.release.xcconfig"; sourceTree = "<group>"; };
 		368CBED8111D31AF7A3180E3 /* Pods_DiveOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiveOutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42B4F2F6226519140033B73F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		42B4F2F8226519220033B73F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		732C9A4BA10A6C850A07E996 /* Pods_DiveOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiveOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7776070FBE2D53E08040987D /* Pods-DiveOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiveOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiveOut/Pods-DiveOut.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				E3EDCEB72247FE36004AEB66 /* Assets.xcassets */,
 				E3EDCEB92247FE36004AEB66 /* LaunchScreen.storyboard */,
 				E3EDCEBC2247FE36004AEB66 /* Info.plist */,
-				42B4F2F6226519140033B73F /* LoginViewController.swift */,
 				42B4F2F8226519220033B73F /* RegisterViewController.swift */,
 			);
 			path = DiveOut;
@@ -400,7 +397,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B4F2F7226519140033B73F /* LoginViewController.swift in Sources */,
 				E3EDCEB12247FE35004AEB66 /* AppDelegate.swift in Sources */,
 				42B4F2F9226519220033B73F /* RegisterViewController.swift in Sources */,
 			);

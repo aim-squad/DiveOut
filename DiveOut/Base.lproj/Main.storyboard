@@ -56,9 +56,6 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="sKp-Rm-Dbn" kind="show" id="7n4-nL-fjl"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.14901960780000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,22 +121,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onLogin:" destination="sKp-Rm-Dbn" eventType="touchUpInside" id="yA0-0z-uAR"/>
-                                    <segue destination="M08-MZ-78O" kind="presentation" id="riu-br-xTC"/>
+                                    <segue destination="M08-MZ-78O" kind="presentation" identifier="loginSegue" id="riu-br-xTC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="STx-xk-pai"/>
                     </view>
-                    <connections>
-                        <outlet property="emailField" destination="Zlz-wE-FGn" id="BTN-yu-hdJ"/>
-                        <outlet property="passwordField" destination="7Gv-8U-q5e" id="HUE-wi-28P"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gZ-Mf-0tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="134"/>
+            <point key="canvasLocation" x="890" y="169"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="1rN-1e-VZ6">
@@ -221,7 +213,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="confirmRegistrationButton:" destination="80A-uU-OXB" eventType="touchUpInside" id="192-Te-Aet"/>
+                                    <action selector="confirmRegistrationButton:" destination="80A-uU-OXB" eventType="touchUpInside" id="VB1-u0-NL5"/>
                                     <segue destination="M08-MZ-78O" kind="presentation" identifier="registerSegue" id="s4l-en-TsM"/>
                                 </connections>
                             </button>
@@ -606,7 +598,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="a4M-No-DYs"/>
-        <segue reference="QcH-25-idv"/>
+        <segue reference="oX8-Y1-UJi"/>
         <segue reference="QJ8-I4-diH"/>
         <segue reference="s4l-en-TsM"/>
     </inferredMetricsTieBreakers>
