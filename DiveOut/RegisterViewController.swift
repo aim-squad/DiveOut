@@ -9,6 +9,8 @@
 import UIKit
 import Parse
 
+
+
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var fullNameField: UITextField!
@@ -16,11 +18,28 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var numberField: UITextField!
     
+//    var nameZ : String
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
+    
+//    @IBAction func loginButton(_ sender: Any) {
+//        let username = emailField.text!
+//        let password = passwordField.text!
+//        PFUser.logInWithUsername(inBackground: username, password: password){
+//            (user, error) in
+//            if user != nil {
+//                self.performSegue(withIdentifier: "onGo", sender: nil)
+//            } else {
+//                print("Error: \(error?.localizedDescription)")
+//            }
+//        }
+//    }
+    
     
     @IBAction func confirmRegistrationButton(_ sender: Any) {
         let user = PFUser()
@@ -32,10 +51,11 @@ class RegisterViewController: UIViewController {
         user["fullName"] = fullNameField.text
         
         user.signUpInBackground { (sucess,error) in
-            if let error = error {
-                print("Error: \(error.localizedDescription)")
+            if sucess {
+                self.performSegue(withIdentifier: "onGo", sender: nil)
+//                self.nameZ = (PFUser.current()?.username)!
             } else {
-                self.performSegue(withIdentifier: "registerSegue", sender: nil)
+                    print("Error: \(error?.localizedDescription)")
             }
         }
     }

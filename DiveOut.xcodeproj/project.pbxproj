@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2467A7CFEC6E7B2ABBDA02AA /* Pods_DiveOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368CBED8111D31AF7A3180E3 /* Pods_DiveOutUITests.framework */; };
 		30CBC10E4CB2FB9E3A766D29 /* Pods_DiveOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732C9A4BA10A6C850A07E996 /* Pods_DiveOut.framework */; };
+		42A320A5226FDDD200991674 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A320A4226FDDD200991674 /* LoginViewController.swift */; };
+		42A320A7226FE01500991674 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A320A6226FE01500991674 /* ProfileViewController.swift */; };
+		42A320A9226FE94400991674 /* resturantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A320A8226FE94400991674 /* resturantsViewController.swift */; };
+		42A320AB226FF61600991674 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A320AA226FF61600991674 /* ReservationViewController.swift */; };
+		42A320AD226FF67400991674 /* AddReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A320AC226FF67400991674 /* AddReservationViewController.swift */; };
 		42B4F2F9226519220033B73F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4F2F8226519220033B73F /* RegisterViewController.swift */; };
 		74AB749CB0C2301A70AF433D /* Pods_DiveOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA14349FECF58F6B99D4072 /* Pods_DiveOutTests.framework */; };
 		E3EDCEB12247FE35004AEB66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDCEB02247FE35004AEB66 /* AppDelegate.swift */; };
@@ -39,6 +44,11 @@
 /* Begin PBXFileReference section */
 		053504C7F135686B2D322002 /* Pods-DiveOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiveOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiveOutUITests/Pods-DiveOutUITests.release.xcconfig"; sourceTree = "<group>"; };
 		368CBED8111D31AF7A3180E3 /* Pods_DiveOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiveOutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A320A4226FDDD200991674 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		42A320A6226FE01500991674 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		42A320A8226FE94400991674 /* resturantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resturantsViewController.swift; sourceTree = "<group>"; };
+		42A320AA226FF61600991674 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		42A320AC226FF67400991674 /* AddReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReservationViewController.swift; sourceTree = "<group>"; };
 		42B4F2F8226519220033B73F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		732C9A4BA10A6C850A07E996 /* Pods_DiveOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiveOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7776070FBE2D53E08040987D /* Pods-DiveOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiveOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiveOut/Pods-DiveOut.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,10 +149,15 @@
 			children = (
 				E3EDCEB02247FE35004AEB66 /* AppDelegate.swift */,
 				E3EDCEB42247FE35004AEB66 /* Main.storyboard */,
+				42A320A4226FDDD200991674 /* LoginViewController.swift */,
 				E3EDCEB72247FE36004AEB66 /* Assets.xcassets */,
 				E3EDCEB92247FE36004AEB66 /* LaunchScreen.storyboard */,
 				E3EDCEBC2247FE36004AEB66 /* Info.plist */,
 				42B4F2F8226519220033B73F /* RegisterViewController.swift */,
+				42A320A6226FE01500991674 /* ProfileViewController.swift */,
+				42A320A8226FE94400991674 /* resturantsViewController.swift */,
+				42A320AA226FF61600991674 /* ReservationViewController.swift */,
+				42A320AC226FF67400991674 /* AddReservationViewController.swift */,
 			);
 			path = DiveOut;
 			sourceTree = "<group>";
@@ -397,8 +412,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42A320A5226FDDD200991674 /* LoginViewController.swift in Sources */,
 				E3EDCEB12247FE35004AEB66 /* AppDelegate.swift in Sources */,
+				42A320A7226FE01500991674 /* ProfileViewController.swift in Sources */,
 				42B4F2F9226519220033B73F /* RegisterViewController.swift in Sources */,
+				42A320A9226FE94400991674 /* resturantsViewController.swift in Sources */,
+				42A320AB226FF61600991674 /* ReservationViewController.swift in Sources */,
+				42A320AD226FF67400991674 /* AddReservationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
