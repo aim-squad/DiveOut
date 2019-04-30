@@ -7,10 +7,12 @@ PODS:
     - Parse/Core (= 1.17.2)
   - Parse/Core (1.17.2):
     - Bolts/Tasks (~> 1.9)
+  - TimeKit (0.0.1)
 
 DEPENDENCIES:
   - AlamofireImage
   - Parse
+  - TimeKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - AlamofireImage
     - Bolts
     - Parse
+    - TimeKit
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 3b31a3dd1777b07ee7f0caee32fafbff544483a5
+  TimeKit: 3c58b5705c88a6ad4c1abfeebb587bb8e4dec6af
 
-PODFILE CHECKSUM: 4bb3b847e0716b26aa46456a4927f0be9c1d5c66
+PODFILE CHECKSUM: c038ddf4756266c0ce4f18f33c11b2c256ccaaa3
 
 COCOAPODS: 1.5.3

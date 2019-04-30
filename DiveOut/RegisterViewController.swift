@@ -18,7 +18,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var numberField: UITextField!
     
-//    var nameZ : String
     
     
     override func viewDidLoad() {

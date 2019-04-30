@@ -8,6 +8,7 @@ target 'DiveOut' do
   # Pods for DiveOut
   pod "Parse"
   pod "AlamofireImage"
+  pod 'TimeKit'
 
   target 'DiveOutTests' do
     inherit! :search_paths
