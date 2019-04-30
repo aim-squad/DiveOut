@@ -422,7 +422,7 @@
                                     <segue destination="74f-o0-AXi" kind="show" id="aq4-uV-VpX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-70-cgn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-70-cgn">
                                 <rect key="frame" x="253" y="726" width="56" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="gwP-ja-ibF"/>
@@ -433,7 +433,7 @@
                                     <segue destination="p3p-ey-hzS" kind="show" id="80n-RP-gAF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-oq-5T5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-oq-5T5">
                                 <rect key="frame" x="36" y="744" width="189" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="4AE-Ad-0vu"/>
@@ -451,6 +451,7 @@
                         <constraints>
                             <constraint firstItem="iUV-ZK-pPy" firstAttribute="top" secondItem="HVL-lX-Kvb" secondAttribute="bottom" constant="37" id="2v5-K6-dqy"/>
                             <constraint firstItem="Om8-o6-mpQ" firstAttribute="leading" secondItem="HVL-lX-Kvb" secondAttribute="trailing" constant="8" id="45C-G4-rNs"/>
+                            <constraint firstItem="xkB-oq-5T5" firstAttribute="leading" secondItem="zb5-Cu-2Ta" secondAttribute="leading" constant="36" id="Ao7-hg-G6h"/>
                             <constraint firstItem="5hj-Ec-vIH" firstAttribute="top" secondItem="IYN-bV-57R" secondAttribute="bottom" constant="8" id="KRG-Aa-2rT"/>
                             <constraint firstItem="Nf7-9H-EdC" firstAttribute="top" secondItem="VmY-Yh-CAE" secondAttribute="bottom" constant="37" id="Kf5-OO-f7N"/>
                             <constraint firstItem="IYN-bV-57R" firstAttribute="leading" secondItem="Nf7-9H-EdC" secondAttribute="trailing" constant="8" id="LAD-Ge-37o"/>
@@ -611,7 +612,7 @@
                                 <color key="textColor" red="0.43529411759999997" green="0.14901960780000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-Tr-hb4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-Tr-hb4">
                                 <rect key="frame" x="254" y="726" width="56" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="AmA-dB-xZT"/>
@@ -622,7 +623,7 @@
                                     <segue destination="p3p-ey-hzS" kind="show" id="wNt-TQ-ovf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-Eu-wIC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Kf-Eu-wIC">
                                 <rect key="frame" x="84" y="726" width="56" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="BrE-W7-XL3"/>
@@ -644,6 +645,7 @@
                         <constraints>
                             <constraint firstItem="v1e-7p-kZh" firstAttribute="bottom" secondItem="yxX-Tr-hb4" secondAttribute="bottom" id="T6o-qg-Fw2"/>
                             <constraint firstItem="yxX-Tr-hb4" firstAttribute="leading" secondItem="9Kf-Eu-wIC" secondAttribute="trailing" constant="114" id="eLi-vU-mG9"/>
+                            <constraint firstItem="9Kf-Eu-wIC" firstAttribute="leading" secondItem="v1e-7p-kZh" secondAttribute="leading" constant="84" id="guR-zr-tSb"/>
                             <constraint firstItem="v1e-7p-kZh" firstAttribute="bottom" secondItem="9Kf-Eu-wIC" secondAttribute="bottom" id="iUT-Oy-lfA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v1e-7p-kZh"/>
@@ -805,9 +807,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wNt-TQ-ovf"/>
-        <segue reference="H2C-6s-sgF"/>
+        <segue reference="4H8-X7-5oX"/>
         <segue reference="Cfq-nM-1FU"/>
-        <segue reference="jK1-sx-ej7"/>
+        <segue reference="b7n-Ma-gAA"/>
         <segue reference="aOk-np-eAD"/>
     </inferredMetricsTieBreakers>
 </document>
